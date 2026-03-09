@@ -279,3 +279,98 @@ const GALLERIES = {
     ]
   }
 };
+
+// ═══════════════════════════════════════════════════════
+// FULL PROJECT DESCRIPTIONS — shown in the Details popup
+// ═══════════════════════════════════════════════════════
+const FULL_DESCRIPTIONS = {
+  dealspace: {
+    subtitle: 'Multi-tenant Real Estate CRM SaaS · Laravel 11 · React',
+    sections: [
+      { heading: null, body: 'DealSpace is a multi-tenant SaaS CRM built on Laravel 11, designed specifically for real estate teams. It covers the complete sales workflow — from capturing and routing leads all the way through deal close — with deep communication tooling, automation, and team performance reporting, all scoped per organisation.' },
+      { heading: 'Lead Management & Pipeline', body: 'Leads are captured automatically from websites via an embeddable tracking script with UTM and form-to-lead support, then distributed to agents through configurable routing rules — including First-to-Claim groups, Round Robin queues, and condition-based Lead Flow Rules with priority ordering. Agents manage contacts through a full pipeline of deal stages, with commission tracking, projected close dates, and file attachments at the deal level.' },
+      { heading: 'Communication Stack', body: 'Communication is deeply integrated across every channel. Agents make and receive VoIP calls directly in the browser via Twilio, with call recording and outcome tracking. SMS is handled through Twilio as well. Email connects to Gmail and Outlook via OAuth, linking conversations directly to contacts. Marketing campaigns and Action Plans automate follow-up sequences with time-delayed steps, open/click tracking, and bounce analytics.' },
+      { heading: 'Calendar & Tasks', body: 'The calendar system supports appointments with conflict checking, custom types and outcomes, and two-way sync with both Google Calendar and Outlook Calendar via webhooks. Tasks span all interaction types — calls, emails, showings, appointments — with due date reminders and filters for today, overdue, and upcoming.' },
+      { heading: 'Business & Architecture', body: 'DealSpace runs Stripe-based subscriptions across four tiers (Free, Basic, Pro, Enterprise) with plan-level limits, invoices, and a self-serve Billing Portal. Real-time notifications via WebSockets through Laravel Reverb. Reporting covers agent activity, lead sources, calls, SMS, campaigns, deal leaderboards, and appointments — all Excel-exportable. Built on Laravel 11 with Octane, Repository + Service architecture, custom per-tenant Eloquent scopes, and stancl/tenancy powering domain-based multi-tenancy across all models.' },
+    ],
+  },
+  cyrus: {
+    subtitle: 'Enterprise Retail Management System · React · TypeScript · Electron · Laravel',
+    sections: [
+      { heading: null, body: 'Cyrus RMS is an enterprise-grade retail management solution built in two complementary versions: a cloud-based web platform and an offline-first desktop application, designed to cover the full spectrum of retail operations across single and multi-branch businesses.' },
+      { heading: 'Web Platform', body: 'Built with React, TypeScript, and Tailwind CSS, the web platform delivers a comprehensive admin dashboard spanning sales, purchases, inventory, expenses, and financial management. Features a role-based access control system with granular, resource-level permissions, RTK Query-powered data fetching, and conditional module configuration. Key modules include catalog management, POS device configuration, warehouse and stock control, supplier and purchase order tracking, safe and cash management, expense tracking, and cross-module analytics. Supports Arabic & English with full RTL layout.' },
+      { heading: 'Desktop POS App', body: 'Built with Electron, React, and TypeScript as an offline-first counterpart. Enables retail staff to run full POS operations — sales, returns, delivery orders, cash management, and session tracking — without requiring a constant internet connection. Data syncs bi-directionally with the cloud backend via REST API or RabbitMQ whenever connectivity is available, with rejected orders queued for resyncing. Supports Arabic & English with i18next.' },
+      { heading: null, body: 'Together, the two versions form a unified retail ecosystem: the web platform handles administration, analytics, and configuration at management level, while the desktop app empowers frontline staff to operate seamlessly on the ground — online or offline.' },
+    ],
+  },
+  fentec: {
+    subtitle: 'Full-Stack E-Scooter Platform · React Native · Laravel · IoT · Algeria',
+    sections: [
+      { heading: null, body: 'Fentec Mobility is a complete, production-ready e-scooter rental ecosystem built entirely from the ground up — covering every layer of the product: customer mobile apps, operator management, seller tooling, accounting, and a public landing page. Think Lime or Bolt Scooters, built end-to-end for the Algerian market.' },
+      { heading: 'Customer Mobile Apps (iOS & Android)', body: 'Built in React Native and published on both the App Store and Google Play. Customers locate nearby scooters on a live map, scan to unlock, track their ride in real time, manage payments and balance, and view their full ride history. Deeply integrated with Google Maps for routing, distance calculation, and geofencing.' },
+      { heading: 'Operator Management Dashboard', body: 'A web-based admin dashboard giving operators complete fleet visibility and control — live scooter status, battery levels, and locations; user account management; pricing and ride zone configuration; payment processing; and overall platform performance. IoT integration enables real-time lock/unlock commands directly from the dashboard to the physical scooter hardware.' },
+      { heading: 'POS Seller App', body: 'A dedicated point-of-sale app for on-the-ground sellers and agents — enabling balance top-ups, cash transactions, inventory management, and customer onboarding at physical locations, extending the platform\'s reach beyond the digital experience.' },
+      { heading: 'Accounting Module', body: 'A standalone module tracking the full financial picture: ride revenue, seller transactions, balance top-ups, refunds, and profit reporting. Supports multi-seller accounting with breakdowns by zone, seller, or time period — providing the financial transparency needed to run the business at scale.' },
+    ],
+  },
+  gspos: {
+    subtitle: 'Fawry-Integrated Android POS · React Native · PAX Devices · Egypt Tax Authority',
+    sections: [
+      { heading: null, body: 'GS POS is an Android-based point-of-sale application built with React Native, developed in partnership with Fawry and deployed exclusively on Fawry PAX devices. A fully integrated retail sales solution for the Egyptian market, combining hardware-level device integration with compliance to Egypt\'s national tax infrastructure.' },
+      { heading: 'Hardware Integration', body: 'Integrates directly with the Fawry SDK to leverage the PAX device\'s built-in capabilities — including the payment terminal, receipt printer, and barcode scanner — providing a seamless, hardware-native experience without external peripherals. Core operations cover sales transactions, returns, and void management.' },
+      { heading: 'E-Invoicing Compliance', body: 'A key differentiator is the integration with the Egyptian Tax Authority\'s e-invoicing system. Every transaction automatically generates and submits a compliant electronic receipt to the tax system in real time, eliminating the manual burden of tax reporting and ensuring businesses remain fully compliant with Egyptian tax regulations.' },
+      { heading: null, body: 'The result brings together Fawry\'s payment infrastructure, PAX hardware capabilities, and Egypt\'s national tax system into a single, easy-to-use retail application — helping merchants sell faster, operate legally, and settle tax obligations with zero friction.' },
+    ],
+  },
+  instasports: {
+    subtitle: 'Sports Ticketing Platform · Laravel · React · UMS-Backed · Egypt',
+    sections: [
+      { heading: null, body: 'InstaSports is an Egyptian sports ticketing startup — think Tazkarti, but built from the ground up as a scalable, modern platform for buying and selling tickets to sports events across Egypt. Backed by United Media Services (UMS / المتحدة), one of Egypt\'s largest media groups.' },
+      { heading: 'Venue & Event Configuration', body: 'Admins configure the full hierarchy: sports categories, stadiums with multi-level seating maps (VIP, General, etc.), clubs, and tournaments. Matches are scheduled by linking clubs, stadiums, tournaments, suppliers, and sport types. Ticket pricing and stock per seating level are configurable per match. Incoming booking requests are reviewed and approved or rejected with reasons.' },
+      { heading: 'Analytics & Access Control', body: 'Three user roles — Admin, Supervisor, and Supplier — each with scoped access. Admins get a real-time analytics dashboard covering total users, tickets sold, pending bookings, gender distribution, top countries, and a monthly sales chart tracking both volume and revenue. Suppliers are scoped to their assigned matches and tickets only.' },
+      { heading: 'Content Management & Audit', body: 'Full bilingual website CMS — admins edit the public site\'s hero section, contact details, social links, and all legal pages using a rich-text Arabic & English editor. A full audit log tracks every create, update, and delete action across the system with before/after data snapshots.' },
+    ],
+  },
+  alamein: {
+    subtitle: 'Egypt\'s Al-Alamein Festival EMS · Laravel · React · Flutter · Government',
+    sections: [
+      { heading: null, body: 'Official event management system for Egypt\'s Al-Alamein Festival — one of the country\'s largest annual cultural events, operated under government-grade reliability requirements and serving thousands of live concurrent users during festival operations.' },
+      { heading: 'System', body: 'Backend, admin dashboard, and RESTful APIs integrating with a React.js web frontend and Flutter mobile app. The system managed live event scheduling, session monitoring, attendee tracking, and real-time status updates — all built and deployed during active festival periods with zero tolerance for downtime.' },
+    ],
+  },
+  dropship: {
+    subtitle: 'Amazon & Costco UK Price Monitor · Laravel Octane · WebSockets · eBay',
+    sections: [
+      { heading: null, body: 'A semi-automated product tracking and alerting system built for a large-scale drop shipping business sourcing from Amazon and Costco UK and selling on eBay. Born from a real operational problem: the business employed a team to manually check hundreds of product listings every day — slow, expensive, and error-prone at scale.' },
+      { heading: 'The Problem It Solves', body: 'Fully automated tools like AutoDS exist but come with a critical risk: they update eBay listings automatically, which violates eBay\'s policies and puts high-reputation seller accounts in jeopardy. The solution needed to sit in the middle — smart enough to detect changes instantly, but human enough to keep the eBay account safe.' },
+      { heading: 'How It Works', body: 'The system scrapes product data from Amazon and Costco UK on a scheduled basis using Laravel cron jobs, continuously monitoring prices, stock availability, and product status. The moment a change is detected, it fires a real-time WebSocket notification via Laravel Reverb with exactly what changed. The team member then makes the update on eBay themselves — keeping a human in the loop and the account fully compliant.' },
+      { heading: 'What Was Built', body: 'A product management interface mapping each eBay listing to its Amazon or Costco source. A real-time notification center surfaces alerts with full change details. A dashboard shows catalog health — flagged, resolved, or pending review. Built with Laravel Octane for high-performance scraping and notification delivery under heavy load.' },
+    ],
+  },
+  uma: {
+    subtitle: 'United Media Academy Platform · Laravel · React · Gamified Marketplace',
+    sections: [
+      { heading: null, body: 'UMA (United Media Academy) is the digital platform for United Media Services\' premier educational initiative — a scholarship and training academy dedicated to developing the next generation of Egyptian media professionals.' },
+      { heading: 'Student Experience', body: 'The site showcases the academy\'s courses and majors with full details, objectives, FAQs, and media content. Applicants apply online through structured forms supporting custom questions and multimedia file uploads. Registered users manage their profiles, track applications, and participate in the platform\'s built-in marketplace.' },
+      { heading: 'Marketplace', body: 'Users can earn and spend virtual coins, bid in auctions, purchase products and packages, and leave reviews — creating a gamified, community-driven ecosystem around the academy\'s content and offerings.' },
+      { heading: 'Admin Backend', body: 'Staff control every aspect of the platform — configuring site-wide settings in both languages, managing homepage content, reviewing and rating applicant submissions, exporting applicant data, and maintaining all platform content from a single dashboard.' },
+    ],
+  },
+  sphinx: {
+    subtitle: 'Full-Featured Travel Booking App · React Native · Laravel · iOS & Android',
+    sections: [
+      { heading: null, body: 'Sphinx Travel is a full-featured travel booking application built for an Egyptian travel company, delivering a complete end-to-end experience for discovering, booking, and managing travel services — available on iOS and Android.' },
+      { heading: 'Travel Discovery', body: 'Covers the four pillars of travel: hotels with room-level browsing, guided tours, restaurants, and car rentals. Each listing comes with photos, amenities, pricing, and ratings. A destinations explorer and live currency exchange rates provide full trip planning context.' },
+      { heading: 'Booking & Account', body: 'Users register via email, phone, or Google OAuth and submit reservation requests for any service type, with full status tracking from a personal dashboard. An in-app chat system connects travelers with support staff, and users can leave detailed ratings after completing stays or tours.' },
+      { heading: 'Admin Backend', body: 'Staff manage the full content catalog: hotels, rooms, tours, cars, restaurants, destinations, currencies, and languages. The homepage is fully curated — admins select which items appear on users\' home screens. Ratings go through a moderation queue, and the team can broadcast push notifications to the entire user base.' },
+    ],
+  },
+  dawlet: {
+    subtitle: 'Quran Competition Voting Platform · Laravel · React · Multi-layer Anti-abuse',
+    sections: [
+      { heading: null, body: 'Dawlet El Telawa is a web-based voting platform built for an online Quran recitation competition, enabling the public to follow contestants, cast votes, and track live results — while ensuring vote integrity through multiple layers of anti-abuse protection.' },
+      { heading: 'Platform', body: 'Two sides: a public-facing experience where visitors browse contestants and submit votes; and an admin backend where organizers manage contestant profiles, monitor incoming votes, and oversee the competition end to end.' },
+      { heading: 'Vote Protection System', body: 'Every submission passes through a multi-layered verification stack: hCaptcha confirms the voter is human, a Laravel rate limiter enforces a 5-minute cooldown per IP, and a 30-day browser cookie prevents repeat submissions. Each vote is also checked against the voter\'s email (unique), IP address (capped at 3 per IP), and a device fingerprint derived from a hash of IP, browser agent, language, and encoding settings. A scheduled command purges suspicious vote clusters — more than 100 votes from a single IP — and recalculates contestant totals. Cloudflare Turnstile is also scaffolded and ready for activation.' },
+    ],
+  },
+};
